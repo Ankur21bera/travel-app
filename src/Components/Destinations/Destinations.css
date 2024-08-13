@@ -1,0 +1,46 @@
+.destinations{
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.destination img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.destination {
+    flex-basis: 31%;
+    position: relative;
+}
+
+.caption{
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background: rgba(0,15,152,0.3);
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.destination:hover .caption{
+    opacity: 1;
+}
+
+@media (max-width: 650px) {
+    .destinations{
+        flex-direction: column;
+    }
+    .destination{
+        flex-direction: column;
+        margin: 20px;
+    }
+}
